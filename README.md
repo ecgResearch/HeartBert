@@ -49,7 +49,15 @@ The trained HeartBert model offers capabilities for various downstream tasks in 
 We adopted the model described in this paper as our initial model. To evaluate the impact of HeartBERT, we employed the initial model for sleep stage classification. We tested the model for 3-class and 5-class scenarios. First, we used raw ECG signals as the model input. Next, to assess potential enhancements, we fed the ECG signals into HeartBERT and used the generated embeddings as input for the initial model.
 The following chart compares the accuracy resulting from raw ECG signals versus embeddings.
 <br><br><br>
-<img src="https://github.com/ecgResearch/HeartBert/blob/main/images/embedding.png" width="30%" padding="500px">
+<img src="https://github.com/ecgResearch/HeartBert/blob/main/images/embedding.png" width="30%">
+<br><br>
+</div>
+
+**testing the effect of unfreezing HeartBERT layers:**
+<div style="text-align: justify">
+To assess the impact of training layers in HeartBERT, we implemented a basic model in which we input HeartBERT-generated embeddings into a bi-LSTM for classifying ECG signals into 3 and 5 classes. In this experiment, we unfroze the layers of HeartBERT to further train them on our dataset. The following chart demonstrates the comparison between training all six layers of HeartBERT and training only the last three layers.
+<br><br><br>
+<img src="https://github.com/ecgResearch/HeartBert/blob/main/images/3or6.png" width="30%">
 <br><br>
 </div>
 
