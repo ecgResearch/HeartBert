@@ -40,6 +40,16 @@ The trained HeartBert model offers capabilities for various downstream tasks in 
 
 </div>
 
+
+**RESULT**
+**testing the effect of embedding:**
+<div style="text-align: justify">
+
+We adopted the model described in this paper as our initial model. To evaluate the impact of HeartBERT, we employed the initial model for sleep stage classification. We tested the model for 3-class and 5-class scenarios. First, we used raw ECG signals as the model input. Next, to assess potential enhancements, we fed the ECG signals into HeartBERT and used the generated embeddings as input for the initial model.
+The following chart compares the accuracy resulting from raw ECG signals versus embeddings.
+
+</div>
+
 **Accessing the Model:**
 
 <div style="text-align: justify">
