@@ -20,7 +20,7 @@ In this project, we present HeartBert, a  dedicated language model tailored for 
 
 <div style="text-align: justify">
 
-To prepare the ECG data, we resampled all signals to 360 Hz and normalized them to a range of [0, 1]. We adopted a quantization approach, namely Lloyd-Max with a discretization factor of 100, to convert ECG signals into text. Additionally, we windowed signals with a maximum window size of 4000 for efficient processing.
+To prepare the ECG data, we resampled all signals to 360 Hz and normalized them to a range of [0, 1]. We adopted a quantization approach, namely Lloyd-Max with a quantization level set at 100, to convert ECG signals into text. Additionally, we windowed signals with a maximum window size of 4000 for efficient processing.
 
 </div>
 
