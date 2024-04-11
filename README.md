@@ -42,6 +42,11 @@ The trained HeartBert model offers capabilities for various downstream tasks in 
 
 
 ## RESULT
+we perform our experiments on MIT-BIH Polysomnographic Database and classify the ECG signals into 3 and 5 classes.
+<br>
+3-class = Wake, NON-REM, REM
+<br>
+5-class = Wake, S1, S2, S3 & S4, REM
 
 **testing the effect of embedding:**
 <div style="text-align: justify">
