@@ -36,34 +36,12 @@ The HeartBert model comprises 6 layers and was trained on our prepared dataset f
 
 <div style="text-align: justify">
 
-The trained HeartBert model offers capabilities for various downstream tasks in healthcare analytics, utilizing ECG data. It can be fine-tuned for tasks such as sleep stage classification and heart disease diagnosis, facilitating medical research and clinical decision-making.
+The trained HeartBert model offers capabilities for various downstream tasks in healthcare analytics, utilizing ECG data. It can be fine-tuned for tasks such as sleep-stage classification and heart disease diagnosis, facilitating medical research and clinical decision-making.
 
-</div>
+We addressed two clinically significant downstream tasks: sleep-stage classification and heartbeat classification. For the sleep-stage classification task, we conducted experiments on the [MIT-BIH Polysomnographic Database](https://physionet.org/content/slpdb/1.0.0/), achieving an F1 score of approximately 75% for the five-stage classification and 62% for the three-stage classification.
 
+Expanding our work to include heartbeat classification utilizing the [Icentia11k dataset](https://www.physionet.org/content/icentia11k-continuous-ecg/1.0/) resulted in an F1 score of approximately 86%.
 
-## RESULT
-we perform our experiments on MIT-BIH Polysomnographic Database and classify the ECG signals into 3 and 5 classes.
-<br>
-3-class = Wake, NON-REM, REM
-<br>
-5-class = Wake, S1, S2, S3 & S4, REM
-
-**testing the effect of embedding:**
-<div style="text-align: justify">
-
-We adopted the model described in this paper as our initial model. To evaluate the impact of HeartBERT, we employed the initial model for sleep stage classification. We tested the model for 3-class and 5-class scenarios. First, we used raw ECG signals as the model input. Next, to assess potential enhancements, we fed the ECG signals into HeartBERT and used the generated embeddings as input for the initial model.
-The following chart compares the accuracy resulting from raw ECG signals versus embeddings.
-<br><br><br>
-<img src="https://github.com/ecgResearch/HeartBert/blob/main/images/embedding.png" width="30%">
-<br><br>
-</div>
-
-**testing the effect of unfreezing HeartBERT layers:**
-<div style="text-align: justify">
-To assess the impact of training layers in HeartBERT, we implemented a basic model in which we input HeartBERT-generated embeddings into a bi-LSTM for classifying ECG signals into 3 and 5 classes. In this experiment, we unfroze the layers of HeartBERT to further train them on our dataset. The following chart demonstrates the comparison between training all six layers of HeartBERT and training only the last three layers.
-<br><br><br>
-<img src="https://github.com/ecgResearch/HeartBert/blob/main/images/3or6.png" width="30%">
-<br><br>
 </div>
 
 **Accessing the Model:**
