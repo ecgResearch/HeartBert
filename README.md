@@ -94,7 +94,7 @@ If you use *HeartBERT* in your research, please cite our [paper](https://arxiv.o
 """
 @article{heartbert2024,
   title={HeartBERT: A Self-Supervised ECG Embedding Model for Efficient and Effective Medical Signal Analysis},
-  author={Saedeh Tahery and Fatemeh HamidAkhlaghi and Termeh Amirsoleimani and Saeed Farzi and Carlo Strapparava},
+  author={Saedeh Tahery and Fatemeh HamidAkhlaghi and Termeh Amirsoleimani and Saeed Farzi},
   journal={arXiv preprint arXiv:2411.11896}, 
   year={2024}
 }
